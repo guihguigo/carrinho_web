@@ -7,13 +7,14 @@ import javax.ejb.EJB;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
+import br.com.k19.sessionBeans.Carrinho;
 import br.com.k19.sessionBeans.CarrinhoBean;
 
 @ManagedBean
 @SessionScoped
 public class CarrinhoMB {
 	@EJB
-	private CarrinhoBean carrinhoBean;
+	private Carrinho carrinhoBean;
 	
 	private String produto;
 	
